@@ -1,4 +1,5 @@
-name: Deploy Storybook to GitHub Pages
+name: Create .nojekyll
+run: touch storybook-static/.nojekyll
 on:
   push:
     branches: [main]

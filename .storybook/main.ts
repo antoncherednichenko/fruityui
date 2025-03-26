@@ -11,6 +11,10 @@ const config: StorybookConfig = {
   core: {
     builder: '@storybook/builder-vite',
   },
+  managerHead: (head) => `
+    ${head}
+    <base href="${process.env.NODE_ENV === 'production' ? '/fruityui/' : '/'}">
+  `,
   viteFinal: async (config) => ({
     ...config,
     plugins: await withoutVitePlugins(config.plugins, ['vite:dts']), // skip dts plugin
