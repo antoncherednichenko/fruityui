@@ -1,5 +1,5 @@
 import type { FC } from "react";
 
 export const Button: FC = () => {
-  return <button>click me</button>
+  return <button style={{ background: 'red' }}>click me</button>
 }
