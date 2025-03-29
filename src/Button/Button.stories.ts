@@ -8,7 +8,9 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
-  argTypes: { },
+  argTypes: {
+    type: 'button'
+  },
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -16,5 +18,7 @@ export default meta;
 type Story = StoryObj<typeof Button>;
 
 export const DefaultButton: Story = {
-  args: { },
+  args: {
+    type: 'button'
+  },
 };
