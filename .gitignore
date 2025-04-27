@@ -34,3 +34,4 @@ lerna-debug.log*
 lib/
 cjs/
 esm/
+storybook-static
